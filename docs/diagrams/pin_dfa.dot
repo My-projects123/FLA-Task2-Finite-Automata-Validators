@@ -1,0 +1,16 @@
+digraph "ATM PIN (exactly 4 digits)" {
+  rankdir=LR;
+  node [shape=circle, fontname="Helvetica"];
+  edge [fontname="Helvetica"];
+  start [shape=point];
+  start -> "q0";
+  "q0" [shape=circle, label="0 digits"];
+  "q1" [shape=circle, label="1 digit"];
+  "q2" [shape=circle, label="2 digits"];
+  "q3" [shape=circle, label="3 digits"];
+  "q4" [shape=doublecircle, label="4 digits (accept)"];
+  "q0" -> "q1" [label="D"];
+  "q1" -> "q2" [label="D"];
+  "q2" -> "q3" [label="D"];
+  "q3" -> "q4" [label="D"];
+}

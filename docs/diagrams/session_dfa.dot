@@ -1,0 +1,20 @@
+digraph "ATM session lock (3 wrong attempts)" {
+  rankdir=LR;
+  node [shape=circle, fontname="Helvetica"];
+  edge [fontname="Helvetica"];
+  start [shape=point];
+  start -> "s0";
+  "s0" [shape=circle, label="0 wrong"];
+  "s1" [shape=circle, label="1 wrong"];
+  "s2" [shape=circle, label="2 wrong"];
+  "AUTH" [shape=doublecircle, label="authenticated"];
+  "LOCK" [shape=circle, label="card locked"];
+  "AUTH" -> "AUTH" [label="C,W"];
+  "LOCK" -> "LOCK" [label="C,W"];
+  "s0" -> "AUTH" [label="C"];
+  "s0" -> "s1" [label="W"];
+  "s1" -> "AUTH" [label="C"];
+  "s1" -> "s2" [label="W"];
+  "s2" -> "AUTH" [label="C"];
+  "s2" -> "LOCK" [label="W"];
+}

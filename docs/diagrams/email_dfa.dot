@@ -1,0 +1,35 @@
+digraph "E-mail format (minimal DFA)" {
+  rankdir=LR;
+  node [shape=circle, fontname="Helvetica"];
+  edge [fontname="Helvetica"];
+  start [shape=point];
+  start -> "m0";
+  "m0" [shape=circle, label="m0"];
+  "m1" [shape=circle, label="m1"];
+  "m2" [shape=circle, label="m2"];
+  "m3" [shape=circle, label="m3"];
+  "m4" [shape=circle, label="m4"];
+  "m5" [shape=circle, label="m5"];
+  "m6" [shape=circle, label="m6"];
+  "m7" [shape=doublecircle, label="m7"];
+  "m0" -> "m1" [label="D,L"];
+  "m1" -> "m0" [label="DOT,HY,US"];
+  "m1" -> "m1" [label="D,L"];
+  "m1" -> "m2" [label="AT"];
+  "m2" -> "m3" [label="D,L"];
+  "m3" -> "m3" [label="D,L"];
+  "m3" -> "m4" [label="DOT"];
+  "m3" -> "m5" [label="HY"];
+  "m4" -> "m3" [label="D"];
+  "m4" -> "m6" [label="L"];
+  "m5" -> "m3" [label="D,L"];
+  "m5" -> "m5" [label="HY"];
+  "m6" -> "m3" [label="D"];
+  "m6" -> "m4" [label="DOT"];
+  "m6" -> "m5" [label="HY"];
+  "m6" -> "m7" [label="L"];
+  "m7" -> "m3" [label="D"];
+  "m7" -> "m4" [label="DOT"];
+  "m7" -> "m5" [label="HY"];
+  "m7" -> "m7" [label="L"];
+}

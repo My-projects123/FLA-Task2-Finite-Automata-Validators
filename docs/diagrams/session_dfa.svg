@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="200" viewBox="0 0 780 200">
+<rect width="100%" height="100%" fill="white"/>
+<text x="12" y="24" font-family="Helvetica" font-size="14" fill="#111">ATM session lock (3 wrong attempts)</text>
+<path d="M 80 72 Q 245.0 45, 410 72" fill="none" stroke="#555" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="245.0" y="41" text-anchor="middle" font-family="Helvetica" font-size="10" fill="#333">C</text>
+<line x1="108" y1="82" x2="162" y2="82" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="135.0" y="76" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#222">W</text>
+<path d="M 190 72 Q 300.0 45, 410 72" fill="none" stroke="#555" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="300.0" y="41" text-anchor="middle" font-family="Helvetica" font-size="10" fill="#333">C</text>
+<line x1="218" y1="82" x2="272" y2="82" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="245.0" y="76" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#222">W</text>
+<line x1="328" y1="82" x2="382" y2="82" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="355.0" y="76" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#222">C</text>
+<path d="M 300 72 Q 410.0 45, 520 72" fill="none" stroke="#555" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="410.0" y="41" text-anchor="middle" font-family="Helvetica" font-size="10" fill="#333">W</text>
+<path d="M 392 72 C 370 30, 450 30, 428 72" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="410" y="24" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#222">C,W</text>
+<path d="M 502 72 C 480 30, 560 30, 538 72" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="520" y="24" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#222">C,W</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#333"/></marker></defs>
+<circle cx="80" cy="100" r="26" fill="#ffffff" stroke="#111" stroke-width="2"/>
+<text x="80" y="104" text-anchor="middle" font-family="Helvetica" font-size="12" fill="#111">s0</text>
+<line x1="25" y1="100" x2="52" y2="100" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="18" y="92" font-family="Helvetica" font-size="10" fill="#111">start</text>
+<circle cx="190" cy="100" r="26" fill="#ffffff" stroke="#111" stroke-width="2"/>
+<text x="190" y="104" text-anchor="middle" font-family="Helvetica" font-size="12" fill="#111">s1</text>
+<circle cx="300" cy="100" r="26" fill="#ffffff" stroke="#111" stroke-width="2"/>
+<text x="300" y="104" text-anchor="middle" font-family="Helvetica" font-size="12" fill="#111">s2</text>
+<circle cx="410" cy="100" r="26" fill="#e8f5e9" stroke="#111" stroke-width="2"/>
+<circle cx="410" cy="100" r="20" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="410" y="104" text-anchor="middle" font-family="Helvetica" font-size="12" fill="#111">AUTH</text>
+<circle cx="520" cy="100" r="26" fill="#ffffff" stroke="#111" stroke-width="2"/>
+<text x="520" y="104" text-anchor="middle" font-family="Helvetica" font-size="12" fill="#111">LOCK</text>
+</svg>
